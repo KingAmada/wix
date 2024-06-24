@@ -2,12 +2,7 @@
 <html>
 <head>
     <title>Wix Site in iFrame</title>
-</head>
-<body>
-    <iframe id="wixIframe" src="https://a3internet.wixsite.com/trial" width="100%" height="800" style="border:none;">
-        Your browser does not support iframes.
-    </iframe>
-
+    
     <script>
         function sendMessageToWixIframe() {
             var iframe = document.getElementById('wixIframe').contentWindow;
@@ -24,5 +19,11 @@
             sendMessageToWixIframe();
         };
     </script>
+</head>
+<body>
+    <iframe id="wixIframe" src="https://a3internet.wixsite.com/trial" width="100%" height="800" style="border:none;">
+        Your browser does not support iframes.
+    </iframe>
+
 </body>
 </html>
